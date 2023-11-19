@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startstyler.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Start Menu</title>
+</head>
+
+<body>
+    <!-- Carousel -->
+    <div id="carousel-container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="th-_3_.jpg" class="d-block w-100" alt="Background 1">
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Container -->
+    <div id="canvas" class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Start Button -->
+        <div class="text-center">
+            <button class="btn btn-custom" type="button" onclick="pindahKeHalamanKedua()">Start</button>
+        </div>
+
+        <!-- Grid System -->
+        <div class="grid-container">
+            <div class="grid-item color-option" onclick="changeColor(this)">
+                <div class="color-picker" style="background-color: #3498db;"></div>
+            </div>
+            <div class="grid-item color-option" onclick="changeColor(this)">
+                <div class="color-picker" style="background-color: #e74c3c;"></div>
+            </div>
+            <div class="grid-item" onclick="randomizeColors()">
+                <button class="btn btn-custom">Randomize Colors</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript Function -->
+    <script src="randomizer.js"></script>
+    <script>
+        function pindahKeHalamanKedua() {
+            window.location.href = "connect4.html";
+        }
+    </script>
+
+</body>
+
+</html>
